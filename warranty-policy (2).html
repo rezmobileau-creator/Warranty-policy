@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30-Day Warranty — [Your Shop Name]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EDEFF1;
+    --panel:#F7F8F9;
+    --ink:#14171B;
+    --steel:#5B6470;
+    --line:#D7DADD;
+    --signal:#1E8A8F;
+    --pass:#1F7A63;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans',sans-serif;
+    line-height:1.5;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 80px;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--steel);
+  }
+
+  /* Hero */
+  header{
+    padding:56px 0 32px;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:24px;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-text h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;
+    font-size:clamp(32px,5vw,44px);
+    line-height:1.05;
+    margin:12px 0 8px;
+  }
+  .hero-text p{color:var(--steel);margin:0;max-width:38ch;}
+  .stamp{
+    flex:none;
+    width:112px;height:112px;
+    border:1.5px dashed var(--signal);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transform:rotate(-8deg);
+  }
+  .stamp-inner{
+    text-align:center;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--signal);
+    font-weight:600;
+    line-height:1.6;
+  }
+  .stamp-inner .n{
+    display:block;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:22px;
+    color:var(--ink);
+    letter-spacing:0;
+    font-weight:700;
+  }
+
+  /* Sections */
+  section{padding:32px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:13px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--steel);
+    margin:0 0 18px;
+    font-weight:600;
+  }
+
+  .row{
+    display:flex;
+    gap:14px;
+    padding:10px 0;
+    border-top:1px solid var(--line);
+  }
+  .row:first-of-type{border-top:none;}
+  .mark{
+    flex:none;
+    width:18px;height:18px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:11px;font-weight:700;
+    margin-top:2px;
+  }
+  .mark.yes{background:rgba(31,122,99,.12);color:var(--pass);}
+  .mark.no{background:rgba(20,23,27,.06);color:var(--steel);}
+  .row div.txt strong{display:block;font-size:14.5px;}
+  .row div.txt span{color:var(--steel);font-size:13.5px;}
+
+  ol.steps{list-style:none;margin:0;padding:0;counter-reset:step;}
+  ol.steps li{
+    counter-increment:step;
+    display:flex;gap:16px;
+    padding:14px 0;
+    border-top:1px solid var(--line);
+  }
+  ol.steps li:first-child{border-top:none;}
+  ol.steps li::before{
+    content:counter(step);
+    font-family:'IBM Plex Mono',monospace;
+    font-weight:600;
+    font-size:13px;
+    color:var(--signal);
+    flex:none;
+    width:22px;
+  }
+
+  .field-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+  .field{
+    padding:14px 16px;
+    background:var(--panel);
+    border:1px solid var(--line);
+  }
+  .field .eyebrow{margin-bottom:4px;}
+  .field .val{font-size:14.5px;font-weight:500;}
+
+  .fine{
+    font-size:12.5px;
+    color:var(--steel);
+    line-height:1.7;
+  }
+  .fine em{color:var(--ink);font-style:normal;font-weight:500;}
+
+  footer{padding:32px 0 0;color:var(--steel);font-size:12.5px;}
+
+  @media(max-width:520px){
+    header{flex-direction:column;}
+    .stamp{align-self:flex-end;}
+    .field-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="hero-text">
+      <div class="eyebrow">Private-sale device warranty</div>
+      <h1>30 days,<br>covered by us.</h1>
+      <p>This iPhone was checked before handoff. If something's genuinely wrong with the hardware, we'll make it right — no runaround.</p>
+    </div>
+    <div class="stamp">
+      <div class="stamp-inner">Verified<br>Tested<span class="n">30</span>days</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>What's covered</h2>
+    <div class="row">
+      <div class="mark yes">✓</div>
+      <div class="txt"><strong>Dead on arrival</strong><span>Device doesn't power on or fails within the first 48 hours of handoff.</span></div>
+    </div>
+    <div class="row">
+      <div class="mark yes">✓</div>
+      <div class="txt"><strong>Pre-existing hardware faults</strong><span>Battery, screen, camera, speaker, or button issues that were not disclosed at sale.</span></div>
+    </div>
+    <div class="row">
+      <div class="mark yes">✓</div>
+      <div class="txt"><strong>Activation lock / carrier lock problems</strong><span>The phone can't be activated on your carrier as promised at sale.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's not covered</h2>
+    <div class="row">
+      <div class="mark no">✕</div>
+      <div class="txt"><strong>Accidental damage</strong><span>Drops, cracked glass, bent chassis, or liquid exposure after handoff.</span></div>
+    </div>
+    <div class="row">
+      <div class="mark no">✕</div>
+      <div class="txt"><strong>Unauthorized repairs</strong><span>Any opening, part swap, or repair not performed by us or Apple voids coverage.</span></div>
+    </div>
+    <div class="row">
+      <div class="mark no">✕</div>
+      <div class="txt"><strong>Normal battery wear</strong><span>Battery health was disclosed at sale and degrades with ordinary use — that's expected, not a defect.</span></div>
+    </div>
+    <div class="row">
+      <div class="mark no">✕</div>
+      <div class="txt"><strong>Software issues from jailbreaking</strong><span>Modifying iOS outside Apple's normal update path voids coverage.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How to file a claim</h2>
+    <ol class="steps">
+      <li>Message us through the same Marketplace listing or contact below within 30 days of pickup, with your warranty card ID.</li>
+      <li>Describe the issue and send a short video or photo if it's visible.</li>
+      <li>We'll agree on a fix: a meetup for repair, a swap, or a partial/full refund, at our discretion, usually within a few days.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Sale record</h2>
+    <div class="field-grid">
+      <div class="field"><div class="eyebrow">Model</div><div class="val">[iPhone model]</div></div>
+      <div class="field"><div class="eyebrow">IMEI (last 4)</div><div class="val mono">[XXXX]</div></div>
+      <div class="field"><div class="eyebrow">Condition grade</div><div class="val">[Grade]</div></div>
+      <div class="field"><div class="eyebrow">Date sold</div><div class="val mono">[YYYY-MM-DD]</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p style="margin:0;">[Your name] · [phone number] · [email]<br>Reachable daily, usually respond within a few hours.</p>
+  </section>
+
+  <section>
+    <h2>Fine print</h2>
+    <p class="fine">This is a personal warranty offered by the seller directly, separate from any Apple warranty or AppleCare. It is not a substitute for statutory consumer-protection rights, which still apply where you live regardless of this policy. <em>This page is a template and isn't legal advice</em> — if you're selling regularly, it's worth a quick check that these terms match your local consumer law. Remedy (repair, replacement, or refund) is chosen at the seller's discretion based on the issue reported.</p>
+  </section>
+
+  <footer>[Your Shop Name] — Verified pre-owned iPhones, sold in person.</footer>
+
+</div>
+</body>
+</html>
